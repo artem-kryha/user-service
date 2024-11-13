@@ -30,3 +30,7 @@ cd user-service
 
 mvn clean package
 docker-compose up --build
+```
+
+## Swagger UI
+http://localhost:8080/swagger-ui/index.html
