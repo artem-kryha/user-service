@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: user-service
+
+db:
+  dataSources:
+    - name: users_postgres
+      driver: org.postgresql.Driver
+      strategy: postgres
+      url: jdbc:postgresql://postgres-db:5432/users
+      table: users
+      user: testuser
+      password: testpass
+      mapping:
+        id: user_id
+        username: login
+        name: first_name
+        surname: last_name
+
+    - name: users_mysql
+      driver: com.mysql.cj.jdbc.Driver
+      strategy: mysql
+      url: jdbc:mysql://mysql-db:3306/users
+      table: mysql_users
+      user: testuser
+      password: testpass
+      mapping:
+        id: id
+        username: username
+        name: name
+        surname: surname
