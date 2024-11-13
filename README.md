@@ -25,7 +25,7 @@ This project is a Spring Boot application that manages user data using PostgreSQ
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repository/user-service.git
+git clone git@github.com:artem-kryha/user-service.git
 cd user-service
 
 mvn clean package
